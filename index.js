@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+app.use(express.static('dist'))
+
 const corsOptions = {
   origin: "http://localhost:5173",
 };
